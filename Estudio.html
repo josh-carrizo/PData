@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Gasto bencina</title>
+    <title>Test</title>
     <style>
         .jumbotron{
             background: url( https://www.wallpapertip.com/wmimgs/81-810264_simple-background-wallpaper-design-ultra-hd-desktop-fondos.jpg )  ;
@@ -87,79 +87,7 @@
             <button type="button" class="btn btn-light btn-lg  texto_consulta" onclick="parent.location='Index.html'">
                 Volver a Inicio
             </button>
-            <br><br>
             <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <!-- Modal Grafico histórico -->
-            <div class="modal fade" id="hdata" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Datos Históricos</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p  id="info_"> <img src="hdata.jpg" alt="Grafico Histórico" width="450px" height="300px" >
-                    </p>   
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-                </div>
-            </div>
-            </div>
-
-            <!-- Modal gráfico Predictivo -->
-            <div class="modal fade" id="pdata" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Gráfico con Predicción</h5>
-
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p  id="info_">  <img src="pdata.jpg" alt="Grafico Proyectados" width="450px" height="300px" >
-                        </p>   
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-              <!-- Modal predicción -->
-              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Información del pique</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                        <p  id="info_dist"> 
-                        </p>   
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
         </div>  
     </div>
@@ -171,8 +99,6 @@
     <script>
 
         $(document).ready(function () {
-
-
 
             $(document).on('click','button',function(){
                 $('#info_dist').html('');
