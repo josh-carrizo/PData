@@ -19,7 +19,6 @@
             border-radius: 15px;
             opacity: 0.9;
         }
-
         .titulo_cuadro{
             background-color: black;
             font-weight: bold;
@@ -34,55 +33,32 @@
             font-weight: bold;
             color:aliceblue
         }
-        .selector{
-            width: 20rem;
-            margin-left: .5rem;
-
+        .img_grafico{
+            width: 1000px;
+            height:400px;
         }
-        #info_dist{
-            background-color: white;
-            opacity: .75;
-        }
-        .badge{
-            padding: 8rem;
-        }
-    
-
-   
     </style>
 </head>
 <body>
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-3 texto-blanco container-fluid text-center ">Informe Analítico</h1>
-            <br>
+            <h1 class="display-3 texto-blanco container-fluid text-center ">Informe Analítico</h1><br>
             <button type="button" class="btn btn-light btn-lg texto_consulta" data-target="#exampleModalCenter" onclick="parent.location='Index.html'">
                 Volver a Inicio
-            </button>
-            <br>
-            <br>
-            <h4 class="texto-blanco container-fluid text-center ">
+            </button><br><br>
+            <h4 class="texto-blanco container-fluid text-center">
                 Para realizar la proyección fue necesario analizar los datos históricos para entender la información que nos entrega.
                 Los datos no presentan estacionalidad en periodos semejantes, solo una amplitud creciente hacia los datos recientes con una leve alza de vibración.
                 Dado esto último no se utilizó algun método estacional, arrojando que el método que mejor se ajusta al comportamiento es ARIMA (0, 1, 1) con una medida de error RMSE 
                 (Raíz del error cuadrático medio) de 0.12, por lo que, la magnitud del error es muy baja y cercana a cero.
-                A continuación podremos ver el estudio realizado de los datos y la proyección graficada a partir la información.
-                <br><br>
-                <img src="graficoajustado.jpg" alt="Grafico Histórico" width="1000px" height="400px" >
-                <br><br>
+                A continuación podremos ver el estudio realizado de los datos y la proyección graficada a partir la información.<br><br>
+                <img src="graficoajustado.jpg" class="img_grafico" alt="Grafico Histórico"><br><br>
                 Los datos históricos poseen un mínimo de 2.51 rms, una media de 3.04 rms, y un máximo de 3.9 rms. La desviación estándar de los datos historicos es de 0.26
-                
-                El método ARIMA es seleccionado debido a que el valor de BIC: -4.3, siendo menor a otros modelos de predicción, con un U de Thell de 0.7622
-                <br>
-                <br>
-
-                    <a href="DatosProyectados.xlsx" download="Datos Proyectados">
-                        <button type="button" class="btn btn-light btn-lg  texto_consulta">Descargar Datos Proyectados </button>
-                    </a>
-           
-            </h4>
-
-            <br>
+                El método ARIMA es seleccionado debido a que el valor de BIC: -4.3, siendo menor a otros modelos de predicción, con un U de Thell de 0.7622<br><br>
+                <a href="DatosProyectados.xlsx" download="Datos Proyectados">
+                    <button type="button" class="btn btn-light btn-lg  texto_consulta">Descargar Datos Proyectados </button>
+                </a>
+            </h4><br>
             <button type="button" class="col-2btn btn-light btn-lg  texto_consulta" onclick="parent.location='Index.html'">
                 Volver a Inicio
             </button>
@@ -91,19 +67,5 @@
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
-    <script>
-
-        $(document).ready(function () {
-
-            $(document).on('click','button',function(){
-                $('#info_dist').html('');
-            });        
-        }); 
-
-
-    </script>
-
 </body>
 </html>

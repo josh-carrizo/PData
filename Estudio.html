@@ -34,79 +34,41 @@
             font-weight: bold;
             color:aliceblue
         }
-        .selector{
-            width: 20rem;
-            margin-left: .5rem;
-
+        .img_grafico{
+            width: 1000px;
+            height:400px;
         }
-        #info_dist{
-            background-color: white;
-            opacity: .75;
-        }
-        .badge{
-            padding: 8rem;
-        }
-    
-
-   
     </style>
 </head>
 <body>
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-3 texto-blanco container-fluid text-center ">Informe del estudio</h1>
-            <br>
+            <h1 class="display-3 texto-blanco container-fluid text-center ">Informe del estudio</h1><br>
             <button type="button" class="btn btn-light btn-lg texto_consulta" data-target="#exampleModalCenter" onclick="parent.location='Index.html'">
                 Volver a Inicio
-            </button>
-            <br>
-            <br>
+            </button><br><br>
             <h4 class="texto-blanco container-fluid text-center ">
 
                 Este proyecto trata sobre el funcionamiento de un motor y su amplitud de vibración medidas en RMS. Este último es de vital importancia para supervisar y 
                 diagnosticar algún fallo mecánico en máquinas rotativas, a mayor vibración mayor es la posibilidad de falla.
 
                 A través de un análisis en el historial de comportamiento de las vibraciones se realizan herramientas de predicción y análisis para entender el funcionamiento
-                de la maquinaria cómo veremos a continuación:
-                <br><br>
-                <img src="hdata.jpg" alt="Grafico Histórico" width="1000px" height="400px" >
-                <br><br>
+                de la maquinaria cómo veremos a continuación:<br><br>
+                <img src="hdata.jpg" alt="Grafico Histórico" class="img_grafico"><br><br>
                 Se puede apreciar que todos los datos analizados están en un rando de 2,5 y 3,5 rms indicando estabilidad, pero durante el último tiempo comienza a tener un comportamiento
-                distinto, por lo cual se hace necesario un estudio, el cual nos entrega la siguiente información:
-                <br><br>
-                <img src="pdata.jpg" alt="Grafico Histórico" width="1000px" height="400px" >
-                <br><br>
+                distinto, por lo cual se hace necesario un estudio, el cual nos entrega la siguiente información:<br><br>
+                <img src="pdata.jpg" alt="Grafico Histórico" class="img_grafico"><br><br>
                 El estudio entrega una proyección con un promedio hacia los 3,5 rms y con tendrencia creciente a aumentar su amplitud lo que puede ser consecuencia de patrones de daño .
                 También nos indica que la probabilidad a los 90 días aproximadamente es muy probable que la vibración llegue a los 4 rms por lo que se recomienda realizar una mantención oportuna y 
                 de esta manera estabilizar la medición de RMS asemejandose o estando por debajo de los datos medidos en un inicio.
-
-
-            </h4>
-
-            <br>
+            </h4><br>
             <button type="button" class="btn btn-light btn-lg  texto_consulta" onclick="parent.location='Index.html'">
                 Volver a Inicio
-            </button>
-            <br>
-
+            </button><br>
         </div>  
     </div>
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
-    <script>
-
-        $(document).ready(function () {
-
-            $(document).on('click','button',function(){
-                $('#info_dist').html('');
-            });        
-        }); 
-
-
-    </script>
-
 </body>
 </html>
